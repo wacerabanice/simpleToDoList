@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>My To-Do List</h1>
+
+    <div class="add">
+        <input type="date" id="taskdate">
+        <input type="text" placeholder="Enter Task" id="taskInput"> 
+        <button onclick="addTask()" id="addBtn"> Add </button>
+    </div>
+
+    <main class="container">
+    <div class="column">
+        <h1> All To Do Items:</h1>
+        <ul id="allTasks"></ul>
+    </div>
+
+    <div class="column">
+        <h1> Completed:</h1>
+        <ul id="completedTasks"></ul>
+    </div>
+
+    <div class="column">
+        <h1> Pending:</h1>
+         <ul id="pendingTasks"></ul>
+    </div>
+
+</main>
+    <script src="script.js"></script>
+
+</body>
+</html>
